@@ -7,7 +7,7 @@ import {
   getLecturesForCourse,
 } from "../../data/dummyData";
 
-// ─── Helpers ────────────────────────────────────────────────────────────────────
+
 function findCourse(subjectId, courseId) {
   const list = allCourses[subjectId] || [];
   return list.find((c) => c.id === courseId) || null;
@@ -32,7 +32,7 @@ function Stars({ rating }) {
   );
 }
 
-// ─── Lecture Row ────────────────────────────────────────────────────────────────
+
 function LectureRow({ lecture, index, deptId, subjectId, courseId, isActive, onClick }) {
   return (
     <button
